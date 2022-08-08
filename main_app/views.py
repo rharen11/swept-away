@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Item, Material
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
@@ -19,11 +19,12 @@ def items_index(request):
 
 def items_detail(request, item_id):
   item = Item.objects.get(id=item_id)
-  return render(request, 'items/detail.html', {'item': item})
+  materials_not_needed = Material.objects.exclude(id__in = item.materials.all().values_list('id'))
+  return render(request, 'items/detail.html', {'item': item, 'materials': materials_not_needed})
 
 class ItemCreate(CreateView):
   model = Item
-  fields = '__all__'
+  fields = ['task', 'day']
   success_url = '/items/'
 
 class ItemUpdate(UpdateView):
@@ -51,3 +52,7 @@ class MaterialUpdate(UpdateView):
 class MaterialDelete(DeleteView):
   model = Material
   success_url = '/materials/'
+
+def assoc_material(request, item_id, material_id):
+  Item.objects.get(id=item_id).materials.add(material_id)
+  return redirect('items_detail', item_id=item_id)

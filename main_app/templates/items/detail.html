@@ -5,19 +5,59 @@
 <link 
   rel="stylesheet" 
   type="text/css" 
-  href="{% static 'css/cats/cat-detail.css' %}"
+  href="{% static 'css/items/item-detail.css' %}"
 />
 {% endblock %}
 
 {% block content %}
 
-<section>
-  <div>
-    <h1>{{ item.task }}</h1>
-    <h2>Last cleaned: {{ item.day }}</h2>
-    <a href="{% url 'items_update' item.id %}">Edit</a>
-    <a href="{% url 'items_delete' item.id %}">Delete</a>
-  </div>
-</section>
+<div class="items">
+  <section>
+    <div>
+      <h1>{{ item.task }}</h1>
+      <h2>Last cleaned: {{ item.day }}</h2>
+      <a href="{% url 'items_update' item.id %}">Edit</a>
+      <a href="{% url 'items_delete' item.id %}">Delete</a>
+    </div>
+  </section>
+</div>
+
+<div class="materials">
+  <section>
+    <div>
+      <h2>Materials</h2>
+    </div>
+    <div>
+      <h2>Materials used to clean {{item.task}}</h2>
+      {% if item.materials.count %}
+        {% for material in item.materials.all %}
+          <div>
+            <a href="{% url 'materials_detail' material.id %}">{{material.name}}</a>
+          </div>
+        {% endfor %}
+      {% else %}
+        <h4>No materials needed for cleaning the {{item.tasl}}</h4>
+      {% endif %}
+    </div>
+    <div>
+      <h3>Materials Available</h3>
+        {% if materials.count %}
+          {% for material in materials.all %}
+            <div>
+              <a href="{% url 'materials_detail' material.id %}">
+                <h3>{{material.name}}</h3>
+              </a>
+              <form action="{% url 'assoc_material' item.id material.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit">Add</button>
+              </form>
+            </div>
+          {% endfor %}
+        {% else %}
+          <h3>{{item.task}} required all materials.</h3>
+        {% endif %}
+    </div>
+  </section>
+</div>
 
 {% endblock %}

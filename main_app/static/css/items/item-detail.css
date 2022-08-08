@@ -1,4 +1,10 @@
-section {
+
+.items {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+}
+
+.materials {
+  display: flex;
+  flex-direction: row;
 }
