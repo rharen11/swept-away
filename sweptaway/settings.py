@@ -123,9 +123,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOGIN_URL = 'home'
+
 LOGIN_REDIRECT_URL = 'items_index'
 
-# Add this variable to specify where logging out redirects to
 LOGOUT_REDIRECT_URL = 'home'
 
 # Default primary key field type
