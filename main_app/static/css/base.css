@@ -1,0 +1,38 @@
+body{
+  background-color: #9B95CA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  width: 100%;
+}
+
+nav{
+  background-color: #F2ECFF;
+
+}
+
+ul{
+  list-style: none;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #C35256;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
