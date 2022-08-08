@@ -1,5 +1,26 @@
 .card-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid black;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

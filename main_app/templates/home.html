@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <h1 class="home-title">Swept Away</h1>
+  <div>
+    <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge">
+  </div>
+</section>
+
+{% endblock %}
