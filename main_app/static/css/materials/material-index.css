@@ -1,0 +1,16 @@
+.materials-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dotted black;
+  background-color: antiquewhite;
+}
+
+.materials-items {
+  display: flex;
+  justify-content: center;
+  border: dotted black;
+  margin: 10px;
+}
+

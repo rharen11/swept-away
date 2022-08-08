@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<div>
+  {% if object %}
+    <h1>Edit {{object.name}}</h1>
+  {% else %}
+    <h1>Add Cleaning Material</h1>
+  {% endif %}
+
+  <div>
+    <form action="" method="POST" class="form" autocomplete="off">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit" class="btn submit">Do it</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

@@ -10,5 +10,16 @@ class Item(models.Model):
 
   def get_absolute_url(self):
       return reverse("items_detail", kwargs={"item_id": self.id})
+
+class Material(models.Model):
+  name = models.CharField(max_length=100)
+  cost = models.IntegerField(max_length=10)
+
+  def __str__(self):
+    return self.name
+
+  def get_absolute_url(self):
+      return reverse("materials_detail", kwargs={"pk": self.id})
+  
   
   

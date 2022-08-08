@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/materials/material-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="materials-title">
+  <h1>Cleaning Materials</h1>
+  <h4>PIC HERE</h4>
+</section>
+
+<section>
+  {% for material in material_list %}
+    <a href="{% url 'materials_detail' material.id %}">
+      <div class="materials-items">
+        <h2>{{material.name}}</h2>
+      </div>
+    </a>
+  {% endfor %}
+</section>
+
+{% endblock %}

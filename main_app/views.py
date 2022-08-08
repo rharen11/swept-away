@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from .models import Item
+from .models import Item, Material
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView
 
 # Add the following import
 from django.http import HttpResponse
@@ -32,3 +33,13 @@ class ItemUpdate(UpdateView):
 class ItemDelete(DeleteView):
   model = Item
   success_url = '/items/'
+
+class MaterialCreate(CreateView):
+  model = Material
+  fields = '__all__'
+
+class MaterialList(ListView):
+  model = Material
+
+class MaterialDetail(DetailView):
+  model = Material
