@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div>
+  <h1>Throw Out Cleaning Material?</h1>
+</div>
+<h2>Confirming you want to throw out material:</h2>
+<form action="" method="POST" class="form">
+  {% csrf_token %}
+  <a href="{% url 'materials_detail' material.id %}">No!</a>
+  <button type="submit">Yup, throw out!</button>
+</form>
+
+{% endblock%}

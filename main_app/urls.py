@@ -12,4 +12,6 @@ urlpatterns = [
   path('materials/create/', views.MaterialCreate.as_view(), name='materials_create'),
   path('materials/<int:pk>/', views.MaterialDetail.as_view(), name='materials_detail'),
   path('materials/', views.MaterialList.as_view(), name='materials_index'),
+  path('materials/<int:pk>/update/', views.MaterialUpdate.as_view(), name='materials_update'),
+  path('materials/<int:pk>/delete/', views.MaterialDelete.as_view(), name='materials_delete'),
 ]

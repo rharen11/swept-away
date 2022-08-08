@@ -43,3 +43,11 @@ class MaterialList(ListView):
 
 class MaterialDetail(DetailView):
   model = Material
+
+class MaterialUpdate(UpdateView):
+  model = Material
+  fields = ['name', 'cost']
+
+class MaterialDelete(DeleteView):
+  model = Material
+  success_url = '/materials/'
