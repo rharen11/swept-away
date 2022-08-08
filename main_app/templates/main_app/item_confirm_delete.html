@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="delete-title">
+  <h1>Delete {{item.task}}</h1>
+  <h2>Are you done cleaning {{item.task}}?</h2>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <a href="{% url 'items_detail' item.id %}">
+      Nope- still dirty
+    </a>
+    <button type="submit">Yup- its SPARKLING</button>
+  </form>
+</div>
+
+{% endblock %}
