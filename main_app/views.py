@@ -2,13 +2,10 @@ from django.shortcuts import render, redirect
 from .models import Item, Material
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
+from django.contrib.auth.views import LoginView
 
-# Add the following import
-from django.http import HttpResponse
-
-# Define the home view
-def home(request):
-  return render(request, 'home.html')
+class Home(LoginView):
+  template_name = 'home.html'
 
 def about(request):
   return render(request, 'about.html')

@@ -20,11 +20,17 @@
   <header>
     <nav>
       <ul>
-        <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="{% url 'items_index' %}">All Items</a></li>
-        <li><a href="{% url 'items_create' %}">Add Item</a></li>
-        <li><a href="{% url 'materials_create' %}">Add Material</a></li>
-        <li><a href="{% url 'materials_index' %}">Materials</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'items_index' %}">All Items</a></li>
+          <li><a href="{% url 'items_create' %}">Add Item</a></li>
+          <li><a href="{% url 'materials_create' %}">Add Material</a></li>
+          <li><a href="{% url 'materials_index' %}">Materials</a></li>
+          <li><a href="{% url 'logout' %}">Log Out</a></li>
+        {% else %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'home' %}">Login</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>

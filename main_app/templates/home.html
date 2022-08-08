@@ -7,11 +7,27 @@
 
 {% block content %}
 
-<section>
-  <h1 class="home-title">Swept Away</h1>
-  <div>
-    <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge">
+<div class="home-title">
+  <section>
+    <h1 class="home-title">Swept Away</h1>
+    <div>
+      <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge">
+    </div>
+  </section>
+</div>
+
+{% if not user.is_authenticated %}
+  <div class="login">
+    <section>
+      <form action="{% url 'home' %}" method="post" class="login">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name="next" value="{{ next }}">
+        <button type="submit" class="btn submit">Login</button>
+      </form>
+    </section>
   </div>
-</section>
+{% endif %}
 
 {% endblock %}
