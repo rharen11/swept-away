@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Add Item to be Cleaned</h1>
+  {% if item %}
+    <h1>Edit {{item.task}}'s cleaning status</h1>
+  {% else %}
+    <h1>Add Item to be Cleaned</h1>
+  {% endif %}
   <div>
     <form action="" method="post" class="form-container" autocomplete="off">
       {% csrf_token %}
