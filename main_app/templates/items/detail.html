@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/cats/cat-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div>
+    <h1>{{ item.task }}</h1>
+    <h2>Last cleaned: {{ item.day }}</h2>
+  </div>
+</section>
+
+{% endblock %}

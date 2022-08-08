@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Item
+from django.views.generic.edit import CreateView
 
 # Add the following import
 from django.http import HttpResponse
@@ -10,16 +12,15 @@ def home(request):
 def about(request):
   return render(request, 'about.html')
 
-class Item:
-  def __init__(self, task, date):
-    self.task = task
-    self.date = date
-
-items = [
-  Item('bathroom', '3/3/22'),
-  Item('kitchen floor', '5/6/22'),
-  Item('desk', '6/12/22')
-]
-
 def items_index(request):
+  items = Item.objects.all()
   return render(request, 'items/index.html', {'items': items})
+
+def items_detail(request, item_id):
+  item = Item.objects.get(id=item_id)
+  return render(request, 'items/detail.html', {'item': item})
+
+class ItemCreate(CreateView):
+  model = Item
+  fields = '__all__'
+  success_url = '/items/'

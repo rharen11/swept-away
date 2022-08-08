@@ -20,8 +20,9 @@
   <header>
     <nav>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/items">All Items</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'items_index' %}">All Items</a></li>
+        <li><a href="{% url 'items_create' %}">Add Item</a></li>
       </ul>
     </nav>
   </header>

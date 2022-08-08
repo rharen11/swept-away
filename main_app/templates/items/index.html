@@ -10,19 +10,20 @@
 {% endblock %}
 
 {% block content %}
-<h1>All Cleaning Items</h1>
+<h1>All Cleaned Items</h1>
 
 <section>
   {% for item in items %}
+  <a href="{% url 'items_detail' item.id %}">
     <div class="card">
-      <div class="card-content">
-        <div clas="card-img">
-          <h4>image here</h4>
+        <div class="card-content">
+          <div clas="card-img">
+            <h4>image here</h4>
+          </div class="h2-h3">
+          <h2 class="card-title">{{ item.task }}</h2>
         </div>
-        <h2 class="card-title">{{ item.task }}</h2>
-        <h3>Last cleaned: {{ item.date }}</h3>
-      </div>
     </div>
+  </a>
   {% endfor %}
 </section>
 
