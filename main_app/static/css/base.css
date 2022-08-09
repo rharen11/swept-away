@@ -13,6 +13,8 @@ header{
 
 nav{
   background-color: #F2ECFF;
+  background-image: url(/main_app/static/images/citrus.jpg);
+  opacity: 0.8;
 
 }
 
@@ -55,4 +57,21 @@ nav ul {
   display: flex;
   justify-content: center;
   font-family: 'Bilbo', cursive;
+}
+
+.home-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bilbo', cursive;
+  font-size: 50px;
+}
+
+.home-img {
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
 }
