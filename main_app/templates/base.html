@@ -7,12 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swept Away</title>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}?{% now "U" %}">
   <link
   rel="shortcut icon"
   type="image/png"
   href="{% static 'images/sponge.svg' %}"
 >
+<link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
   {% block head %}
   {% endblock %}
 </head>

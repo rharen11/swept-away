@@ -1,5 +1,7 @@
 body{
-  background-color: #9B95CA;
+  /* background-image: url("/main_app/static/images/coco.png"); */
+  background-color: #525A7A;
+  color: #FFEACE;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +37,22 @@ nav ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.images {
+  margin: 30px;
+}
+
+.phrase {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: 'Bilbo', cursive;
+
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bilbo', cursive;
 }

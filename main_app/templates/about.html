@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
-<h1>Welcome to Swept Away!</h1>
-<h2>Clean for the moment, enjoy for life</h2>
+<h1 class="about-title">Welcome to Swept Away!</h1>
+<h2 class="phrase">Clean for the moment, enjoy for life 
+  <img src="{% static 'images/stars.svg' %}" alt="stars" width=20px>
+</h2>
+<div class="images">
+<img src="{% static 'images/sponge.svg' %}" alt="sponge" width=100px>
+<img src="{% static 'images/spray.svg' %}" alt="spray-bottle" width=100px>
+<img src="{% static 'images/lemon.svg' %}" alt="spray-bottle" width=100px>
+</div>
 
 {% endblock %}
