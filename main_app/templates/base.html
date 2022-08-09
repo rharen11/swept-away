@@ -13,7 +13,7 @@
   type="image/png"
   href="{% static 'images/sponge.svg' %}"
 >
-<link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bilbo&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   {% block head %}
   {% endblock %}
 </head>
@@ -22,14 +22,14 @@
     <nav class="nav-bar">
       <ul>
         {% if user.is_authenticated %}
-          <li><a href="{% url 'about' %}">About</a></li>
+          {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
           <li><a href="{% url 'items_index' %}">All Items</a></li>
           <li><a href="{% url 'items_create' %}">Add Item</a></li>
           <li><a href="{% url 'materials_create' %}">Add Material</a></li>
           <li><a href="{% url 'materials_index' %}">Materials</a></li>
           <li><a href="{% url 'logout' %}">Log Out</a></li>
         {% else %}
-          <li><a href="{% url 'about' %}">About</a></li>
+          {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
           <li><a href="{% url 'home' %}">Login</a></li>
           <li><a href="{% url 'signup' %}">Sign Up</a></li>
         {% endif %}
