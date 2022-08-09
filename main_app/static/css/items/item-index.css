@@ -11,8 +11,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: solid black;
-  background-color: antiquewhite;
+  border: solid thin #2F4858;
+  border-radius: 4px;
+  background-color: #525A7A;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -28,10 +29,25 @@
   text-decoration: none;
 }
 
-.card-container > a {
+.card-title > a { 
+  color: #E88D83;
   text-decoration: none;
 }
 
-.h2-h3 > a {
+.card-title {
+  color: #F6B173;
   text-decoration: none;
 }
+
+.card > a {
+  text-decoration: none;
+}
+
+.card-title:active {
+  text-decoration: none;
+}
+
+.card-title:visited {
+  text-decoration: none;
+}
+

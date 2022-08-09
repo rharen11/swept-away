@@ -5,12 +5,12 @@
 <link 
   rel="stylesheet"
   type="text/css"
-  href="{% static 'css/items/item-index.css' %}"
+  href="{% static 'css/items/item-index.css' %}?{% now "U" %}"
 />
 {% endblock %}
 
 {% block content %}
-<h1>All Cleaned Items</h1>
+<h1>Cleaned Items <img src="{% static 'images/stars.svg' %}" alt="stars" width=30px></h1>
 
 <section>
   {% for item in items %}
@@ -18,8 +18,8 @@
     <div class="card">
         <div class="card-content">
           <div clas="card-img">
-            <h4>image here</h4>
-          </div class="h2-h3">
+            <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 60px>
+          </div>
           <h2 class="card-title">{{ item.task }}</h2>
         </div>
     </div>
