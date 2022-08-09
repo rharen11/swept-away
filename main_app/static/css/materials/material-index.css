@@ -3,14 +3,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: dotted black;
-  background-color: antiquewhite;
 }
 
 .materials-items {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: solid thin #2F4858;
+  border-radius: 4px;
+  background-color: #525A7A;
   justify-content: center;
-  border: dotted black;
+  align-items: center;
+  padding: 10px;
   margin: 10px;
+  text-decoration: none;
+  width: 200px;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+h2 {
+  color: #F6B173;
+  text-decoration: none;
+}
+
+
+
 

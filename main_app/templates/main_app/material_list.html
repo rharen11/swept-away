@@ -5,22 +5,24 @@
 <link
   rel="stylesheet"
   type="text/css"
-  href="{% static 'css/materials/material-index.css' %}"
+  href="{% static 'css/materials/material-index.css' %}?{% now "U" %}"
 />
 {% endblock %}
 
 {% block content %}
 
 <section class="materials-title">
-  <h1>Cleaning Materials</h1>
-  <h4>PIC HERE</h4>
+  <h1>Tools <img src="{% static 'images/spray.svg' %}" alt="spray-bottle" width=30px></h1>
 </section>
 
 <section>
   {% for material in material_list %}
     <a href="{% url 'materials_detail' material.id %}">
       <div class="materials-items">
-        <h2>{{material.name}}</h2>
+        <div class="card-img">
+          <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 60px>
+        </div>
+        <h2 class="card-title">{{material.name}} </h2>
       </div>
     </a>
   {% endfor %}
