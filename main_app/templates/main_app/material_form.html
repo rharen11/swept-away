@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/materials/material-form.css' %}"/>
 {% endblock %}
 
 {% block content %}
@@ -11,7 +11,7 @@
   {% if object %}
     <h1>Edit {{object.name}}</h1>
   {% else %}
-    <h1>Add Cleaning Material</h1>
+    <h1>+ Cleaning Tool <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 30px></h1>
   {% endif %}
 
   <div>
@@ -20,7 +20,7 @@
       <table>
         {{ form.as_table }}
       </table>
-      <button type="submit" class="btn submit">Do it</button>
+      <button type="submit" class="add-tool">+ Tool</button>
     </form>
   </div>
 </div>
