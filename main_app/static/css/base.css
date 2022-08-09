@@ -15,7 +15,7 @@ header{
 
 nav{
   background-color: #F2ECFF;
-  background-image: url(/main_app/static/images/citrus.jpg);
+  /* background-image: url(/main_app/static/images/citrus.jpg); */
   opacity: 0.8;
 
 }
