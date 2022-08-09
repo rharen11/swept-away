@@ -3,14 +3,15 @@
 
 {% block content %}
 
-<div>
-  <h1>Throw Out Cleaning Material?</h1>
+<div class="confirm-dlt-material">
+  <h1>Throw Out?</h1>
 </div>
-<h2>Confirming you want to throw out material:</h2>
+<h2 class="confirm-dlt-material-msg">Confirm you want to throw out:</h2>
 <form action="" method="POST" class="form">
   {% csrf_token %}
-  <a href="{% url 'materials_detail' material.id %}">No!</a>
-  <button type="submit">Yup, throw out!</button>
+  <button class="confirm-dlt-material-btn-no">
+  <a href="{% url 'materials_detail' material.id %}" class="confirm-dlt-material-btn-no">No, Cancel</a></button>
+  <button type="submit" class="confirm-dlt-material-btn-yes">Yup, throw out!</button>
 </form>
 
 {% endblock%}

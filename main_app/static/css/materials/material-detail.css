@@ -1,3 +1,35 @@
 .materials-items {
-  border: dotted black;
+  background-color: #2F4858;
+  color: #F6B173;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  margin-top: 30px;
+  text-decoration: none;
 }
+
+.edit-button {
+  padding: 10px;
+  color: #F6B173;
+  text-decoration: none;
+}
+
+.edit-button > a {
+  color: #F6B173;
+  text-decoration: none;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* img{
+  padding-left: 5px;
+} */

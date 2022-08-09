@@ -5,16 +5,23 @@
 <link
   rel="stylesheet"
   type="text/css"
-  href="{% static 'css/materials/material-detail.css' %}"
+  href="{% static 'css/materials/material-detail.css' %}?{% now "U" %}"
 />
 {% endblock %}
 
 {% block content %}
+<div class="images">
+  <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 30px>
+  <img src="{% static 'images/spray.svg' %}" alt="yellow sponge" width= 30px>
+  <img src="{% static 'images/stars.svg' %}" alt="yellow sponge" width= 30px>
+</div>
 <div class="materials-items">
   <h2>{{material.name}}</h2>
   <h3>${{material.cost}}</h3>
+  <div class="edit-button">
   <a href="{% url 'materials_update' material.id %}">Edit</a>
   <a href="{% url 'materials_delete' material.id %}">Delete</a>
+</div>
 </div>
 
 {% endblock %}

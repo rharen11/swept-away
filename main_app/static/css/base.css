@@ -113,3 +113,39 @@ nav ul {
   font-size: large;
   border-radius: 4px;
 }
+
+.confirm-dlt-material {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-dlt-material-msg {
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-dlt-material-btn-yes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #2F4858;
+  color: #F6B173;
+  padding: 5px;
+  margin: 5px;
+  font-size: large;
+}
+
+.confirm-dlt-material-btn-no {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #2F4858;
+  color: #F6B173;
+  padding: 5px;
+  margin: 5px;
+  width: fit-content;
+  font-size: medium;
+}
