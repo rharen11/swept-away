@@ -1,7 +1,7 @@
 body{
   /* background-image: url("/main_app/static/images/stars.svg"); */
-  background-color: #525A7A;
-  color: #FFEACE;
+  background-color: #F6B173;
+  color: #2F4858;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,22 +14,35 @@ header{
 }
 
 nav{
-  background-color: #F2ECFF;
+  background-color: #2F4858;
   /* background-image: url(/main_app/static/images/citrus.jpg); */
-  opacity: 0.8;
-
+  color: #F6B173;
+  border-radius: 4px;
+  height: 30px;
+  margin-top: 5px;
 }
 
 ul{
+  display: flex;
+  justify-content: left;
+  align-items: left;
   list-style: none;
 }
 
 nav li {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: #F6B173;
+}
+
+nav li:last-child {
+  padding-left: 38px;
 }
 
 nav a {
   text-decoration: none;
+  color: #F6B173;
 }
 
 nav a:hover{

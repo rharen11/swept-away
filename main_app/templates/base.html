@@ -23,10 +23,11 @@
       <ul>
         {% if user.is_authenticated %}
           {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
-          <li><a href="{% url 'items_index' %}">All Items</a></li>
-          <li><a href="{% url 'items_create' %}">Add Item</a></li>
-          <li><a href="{% url 'materials_create' %}">Add Material</a></li>
-          <li><a href="{% url 'materials_index' %}">Materials</a></li>
+          <li><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 20px></li>
+          <li><a href="{% url 'items_index' %}">Tasks</a></li>
+          <li><a href="{% url 'materials_index' %}">Tools</a></li>
+          <li><a href="{% url 'items_create' %}">+ Task</a></li>
+          <li><a href="{% url 'materials_create' %}">+ Tool</a></li>
           <li><a href="{% url 'logout' %}">Log Out</a></li>
         {% else %}
           {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
