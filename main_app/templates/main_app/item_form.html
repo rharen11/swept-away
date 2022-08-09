@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}?{% now "U" %}"/>
 {% endblock %}
 
 {% block content %}
   {% if item %}
     <h1>Edit {{item.task}}'s cleaning status</h1>
   {% else %}
-    <h1>Add Item to be Cleaned</h1>
+    <h1>Let's Clean<img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 30px></h1>
   {% endif %}
   <div>
     <form action="" method="post" class="form-container" autocomplete="off">
@@ -17,7 +17,7 @@
       <table>
         {{ form.as_table }}
       </table>
-      <button type="submit" class="btn submit">Add Item</button>
+      <button type="submit" class="add-task">Add Item</button>
     </form>
   </div>
 

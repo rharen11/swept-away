@@ -97,7 +97,8 @@ nav ul {
 }
 
 .login input {
-  background-color: #F6B173;
+  color: #F6B173;
+  background-color: #2F4858;
 }
 
 .login label {
@@ -105,7 +106,8 @@ nav ul {
 }
 
 .login button {
-  background-color: #F6B173;
+  background-color: #2F4858;
+  color: #F6B173;
   align-self: flex-end;
   border: none;
   font-size: large;

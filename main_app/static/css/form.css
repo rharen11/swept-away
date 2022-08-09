@@ -38,3 +38,27 @@ td > textarea {
   background-color: black;
   color: white;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: larger;
+}
+
+input {
+  background-color: #2F4858;
+}
+
+.add-task {
+  display: flex;
+  background-color: #2F4858;
+  color: #F6B173;
+  align-self: flex-end;
+  border: none;
+  font-size: large;
+  border-radius: 4px;
+  margin-right: 28px;
+}
