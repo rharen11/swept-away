@@ -25,9 +25,9 @@
           <li><a href="{% url 'about' %}"><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 20px></a></li>
           {% comment %} <li><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 20px></li> {% endcomment %}
           <li><a href="{% url 'items_index' %}">Tasks</a></li>
-          <li><a href="{% url 'materials_index' %}">Tools</a></li>
+          <li><a href="{% url 'materials_index' %}"><img src="{% static 'images/spray.svg' %}" alt="yellow sponge" width= 20px class="exit"></a></li>
           <li><a href="{% url 'items_create' %}">+ Task</a></li>
-          <li><a href="{% url 'materials_create' %}">+ Tool</a></li>
+          <li><a href="{% url 'materials_create' %}">+<img src="{% static 'images/spray.svg' %}" alt="yellow sponge" width= 20px class="exit"></a></li>
           <li><a href="{% url 'logout' %}"><img src="{% static 'images/exit-orange.svg' %}" alt="yellow sponge" width= 20px class="exit"></a></li>
         {% else %}
           {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}

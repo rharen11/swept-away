@@ -14,10 +14,10 @@
 <div class="items">
   <section>
     <div class="items-list">
-      <h1>{{ item.task }} <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 30px></h1>
+      <h1 class="items-list">{{ item.task }} <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 30px></h1>
       <h2>Last cleaned: {{ item.day }}</h2>
-      <a href="{% url 'items_update' item.id %}">Edit</a>
-      <a href="{% url 'items_delete' item.id %}">Delete</a>
+      <a href="{% url 'items_update' item.id %}" class="edit-delete-item">Edit</a>
+      <a href="{% url 'items_delete' item.id %}" class="edit-delete-item">Delete</a>
     </div>
   </section>
 </div>
@@ -28,11 +28,11 @@
       <h2>Materials</h2>
     </div> {% endcomment %}
     <div>
-      <h2><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 22px> Tools for {{item.task}}:</h2>
+      <h3><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 22px> Supplies for {{item.task}}:</h3>
       {% if item.materials.count %}
         {% for material in item.materials.all %}
           <div class="materials-added">
-            <a href="{% url 'materials_detail' material.id %}">{{material.name}}</a>
+            <a href="{% url 'materials_detail' material.id %}" class="materials-added">{{material.name}}</a>
           </div>
         {% endfor %}
       {% else %}
