@@ -87,6 +87,9 @@ nav ul {
 }
 
 .home-title {
+  background-color: #2F485880;
+  color: whitesmoke;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   font-family: 'Bilbo', cursive;
@@ -99,15 +102,18 @@ nav ul {
 }
 
 .login {
+  background-color: #2F485880;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .login input {
-  color: #F6B173;
+  color: whitesmoke;
   background-color: #2F4858;
 }
 
@@ -116,8 +122,8 @@ nav ul {
 }
 
 .login button {
-  background-color: #2F4858;
-  color: #F6B173;
+  background-color: whitesmoke;
+  color: #2F4858;
   align-self: flex-end;
   border: none;
   font-size: large;
@@ -125,14 +131,23 @@ nav ul {
 }
 
 .confirm-dlt-material {
+  background-color: #2F485880;
+  color: whitesmoke;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .confirm-dlt-material-msg {
+  background-color: #2F485880;
+  color: whitesmoke;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
 
 .confirm-dlt-material-btn-yes {
@@ -179,5 +194,15 @@ nav ul {
     background-image: url("../images/fruits.svg");
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  /* nav {
+  margin: 10px;
+  } */
+
+  nav li{
+    margin: 5px;
+    font-size: larger;
+    padding-bottom: 10px;
   }
 }

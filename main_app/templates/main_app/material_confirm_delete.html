@@ -4,9 +4,9 @@
 {% block content %}
 
 <div class="confirm-dlt-material">
-  <h1>Throw Out?</h1>
+  <h1>Throw Out {{material.name}}?</h1>
 </div>
-<h2 class="confirm-dlt-material-msg">Confirm you want to throw out:</h2>
+<h2 class="confirm-dlt-material-msg">Are you sure?</h2>
 <form action="" method="POST" class="form">
   {% csrf_token %}
   <button class="confirm-dlt-material-btn-no">
