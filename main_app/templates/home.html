@@ -7,6 +7,18 @@
 
 {% block content %}
 
+{% if user.is_authenticated %}
+<h1 class="about-title">Welcome to Swept Away!</h1>
+<h2 class="phrase">Clean for the moment, enjoy for life 
+  <img src="{% static 'images/stars.svg' %}" alt="stars" width=20px>
+</h2>
+<div class="images">
+<img src="{% static 'images/sponge.svg' %}" alt="sponge" width=100px>
+<img src="{% static 'images/spray.svg' %}" alt="spray-bottle" width=100px>
+<img src="{% static 'images/lemon.svg' %}" alt="spray-bottle" width=100px>
+</div>
+
+{% elif not user.is_authenticated %}
 <div class="home-title">
   <section>
     <h1 class="home-title">Swept Away</h1>
@@ -16,7 +28,6 @@
   </section>
 </div>
 
-{% if not user.is_authenticated %}
     <section class="login">
       <form action="{% url 'home' %}" method="post" class="login" autocomplete="OFF">
         <h1 class="login">Login</h1>
