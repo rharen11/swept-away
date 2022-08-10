@@ -7,7 +7,7 @@
 
 {% block content %}
   {% if item %}
-    <h1>Edit {{item.task}}'s cleaning status</h1>
+    <h1>Edit {{item.task}}</h1>
   {% else %}
     <h1>Let's Clean<img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 30px></h1>
   {% endif %}
@@ -17,7 +17,11 @@
       <table>
         {{ form.as_table }}
       </table>
-      <button type="submit" class="add-task">Add Item</button>
+      {% if item %}
+        <button type="submit" class="add-task">Edit Item</button>
+      {% else %}
+        <button type="submit" class="add-task">Add Item</button>
+      {% endif %}
     </form>
   </div>
 
