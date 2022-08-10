@@ -1,0 +1,28 @@
+.signup-table {
+  font-size: small;
+}
+
+table {
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  text-overflow: clip;
+}
+
+li {
+  font-size: 0px;
+}
+
+span {
+  font-size: 0;
+}
