@@ -1,17 +1,20 @@
 .materials-title {
+  background-color: #2F485880;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
+  border-radius: 4px;
 }
 
 .materials-items {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: solid thin #2F4858;
   border-radius: 4px;
-  background-color: #525A7A;
+  background-color: #525A7A80;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -27,7 +30,7 @@ h1 {
 }
 
 h2 {
-  color: #F6B173;
+  color: whitesmoke;
   text-decoration: none;
 }
 

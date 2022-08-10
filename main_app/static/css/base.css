@@ -60,7 +60,7 @@ nav ul {
 }
 
 .images {
-  margin: 20px;
+  margin: 10px;
 }
 
 .phrase {
@@ -69,14 +69,21 @@ nav ul {
   margin-bottom: 50px;
   font-family: 'Bilbo', cursive;
   font-size: 30px;
+  background-color: #2F485880;
+  color: whitesmoke;
+  border-radius: 4px;
 
 }
 
 .about-title {
+  background-color: #2F485880;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   font-family: 'Bilbo', cursive;
   font-size: 45px;
+  padding: 15px;
+  border-radius: 4px;
 }
 
 .home-title {
@@ -163,31 +170,6 @@ nav ul {
   margin-left: 220px;
 }
 
-/* .signup-table {
-  font-size: small;
+.exit {
+  color: whitesmoke;
 }
-
-table {
-  padding: 10px;
-}
-
-td {
-  padding: 10px;
-}
-
-label {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  text-overflow: clip;
-}
-
-li {
-  font-size: 0px;
-}
-
-span {
-  font-size: 0;
-} */
