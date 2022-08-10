@@ -40,7 +40,7 @@
       {% endif %}
     </div>
     <div>
-      <h3>Materials Available</h3>
+      <h3><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 22px>Materials Available:</h3>
         {% if materials.count %}
           {% for material in materials.all %}
             <div class="materials-available">

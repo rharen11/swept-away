@@ -12,6 +12,9 @@
 .materials {
   display: flex;
   flex-direction: row;
+  border: solid thin #2F4858;
+  border-radius: 4px;
+  margin-top: 5px;
 }
 a {
   background-color: #2F4858;
