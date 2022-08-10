@@ -1,5 +1,5 @@
 # Swept Away
-![main page](./main_app/static/images/main-page.png)
+![main page](./main_app/static/images/main-page2.png)
 ##
 Swept Away is an application to keep you on track with cleaning- so you can enjoy more life!
 
