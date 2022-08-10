@@ -27,7 +27,7 @@ input {
   color: whitesmoke;
 }
 
-.add-tool {
+.edit-tool {
   display: flex;
   background-color: #2F4858;
   color: whitesmoke;
@@ -35,6 +35,17 @@ input {
   font-size: large;
   border-radius: 4px;
   margin-left: 217px;
+  margin-top: 15px;
+}
+
+.add-tool {
+  display: flex;
+  background-color: #2F4858;
+  color: whitesmoke;
+  border: none;
+  font-size: large;
+  border-radius: 4px;
+  margin-left: 248px;
   margin-top: 15px;
 }
 
