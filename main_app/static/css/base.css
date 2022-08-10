@@ -173,3 +173,11 @@ nav ul {
 .exit {
   color: whitesmoke;
 }
+
+@media only screen and (min-width: 768px){
+  body {
+    background-image: url("../images/zen.jpg");
+    background-size: 1024px 920px;
+    background-attachment: fixed;
+  }
+}
