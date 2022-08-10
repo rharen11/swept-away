@@ -1,6 +1,6 @@
 .materials-items {
-  background-color: #2F4858;
-  color: #F6B173;
+  background-color: #2F485880;
+  color: whitesmoke;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -14,12 +14,13 @@
 
 .edit-button {
   padding: 10px;
-  color: #F6B173;
+  color: whitesmoke;
   text-decoration: none;
+  padding: 5px;
 }
 
 .edit-button > a {
-  color: #F6B173;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -30,6 +31,9 @@
   align-items: center;
 }
 
-/* img{
-  padding-left: 5px;
-} */
+.images {
+  background-color: #2F485880;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
