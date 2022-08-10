@@ -176,8 +176,8 @@ nav ul {
 
 @media only screen and (min-width: 768px){
   body {
-    background-image: url("../images/zen.jpg");
-    background-size: 1024px 920px;
+    background-image: url("../images/fruits.svg");
+    background-size: cover;
     background-attachment: fixed;
   }
 }
