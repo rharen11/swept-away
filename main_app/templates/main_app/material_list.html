@@ -17,7 +17,7 @@
 
 <section>
   {% for material in material_list %}
-    <a href="{% url 'materials_detail' material.id %}">
+    <a href="{% url 'materials_detail' material.id %}" class="materials">
       <div class="materials-items">
         <div class="card-img">
           <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 60px>

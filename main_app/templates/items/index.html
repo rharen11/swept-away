@@ -10,12 +10,12 @@
 {% endblock %}
 
 {% block content %}
-<h1>Cleaned Items <img src="{% static 'images/stars.svg' %}" alt="stars" width=30px></h1>
+<h1 class="cleaned-title">Cleaned Items <img src="{% static 'images/stars.svg' %}" alt="stars" width=30px></h1>
 
 <section>
   {% if items.count %}
     {% for item in items %}
-    <a href="{% url 'items_detail' item.id %}">
+    <a href="{% url 'items_detail' item.id %}" class="card-title">
       <div class="card">
           <div class="card-content">
             <div clas="card-img">

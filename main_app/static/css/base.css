@@ -1,5 +1,8 @@
 body{
-  /* background-image: url("/main_app/static/images/stars.svg"); */
+  background-image: url("../images/oranges.jpg");
+  background-position: center;
+  background-size: 640px 960px;
+  background-attachment: fixed;
   background-color: #F6B173;
   color: #2F4858;
   display: flex;

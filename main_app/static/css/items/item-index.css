@@ -1,3 +1,11 @@
+.cleaned-title {
+  background-color: #525A7A90;
+  /* border: solid thin #2F4858; */
+  color: whitesmoke;
+  border-radius: 4px;
+  padding: 5px;
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
@@ -11,9 +19,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: solid thin #2F4858;
+  /* border: solid thin #2F4858; */
   border-radius: 4px;
-  background-color: #525A7A;
+  background-color: #525A7A90;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -30,12 +38,12 @@
 }
 
 .card-title > a { 
-  color: #E88D83;
+  color: white;
   text-decoration: none;
 }
 
 .card-title {
-  color: #F6B173;
+  color: whitesmoke;
   text-decoration: none;
 }
 
