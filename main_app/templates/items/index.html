@@ -13,18 +13,31 @@
 <h1>Cleaned Items <img src="{% static 'images/stars.svg' %}" alt="stars" width=30px></h1>
 
 <section>
-  {% for item in items %}
-  <a href="{% url 'items_detail' item.id %}">
-    <div class="card">
-        <div class="card-content">
-          <div clas="card-img">
-            <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 60px>
+  {% if items.count %}
+    {% for item in items %}
+    <a href="{% url 'items_detail' item.id %}">
+      <div class="card">
+          <div class="card-content">
+            <div clas="card-img">
+              <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 60px>
+            </div>
+            <h2 class="card-title">{{ item.task }}</h2>
           </div>
-          <h2 class="card-title">{{ item.task }}</h2>
-        </div>
+      </div>
+    </a>
+    {% endfor %}
+  {% else%}
+    <div class="no-items">
+      <div class="no-items-msg">
+        <h4>No Items- Time to Clean!</h4>
+      </div>
+      <div class="no-items-img">
+        <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 60px>
+        <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 60px>
+        <img src="{% static 'images/stars.svg' %}" alt="yellow sponge" width= 60px>
+      </div>
+  {% endif %}
     </div>
-  </a>
-  {% endfor %}
 </section>
 
 {% endblock %}

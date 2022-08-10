@@ -51,3 +51,19 @@
   text-decoration: none;
 }
 
+.no-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-items-msg {
+  display: flex;
+  justify-content: center;
+}
+
+.no-items-img {
+  display: flex;
+  justify-content: center;
+}
+
