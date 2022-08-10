@@ -5,7 +5,7 @@
 <link 
   rel="stylesheet" 
   type="text/css" 
-  href="{% static 'css/items/item-detail.css' %}"
+  href="{% static 'css/items/item-detail.css' %}?{% now "U" %}"
 />
 {% endblock %}
 
@@ -13,8 +13,8 @@
 
 <div class="items">
   <section>
-    <div>
-      <h1>{{ item.task }}</h1>
+    <div class="items-list">
+      <h1>{{ item.task }} <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 30px></h1>
       <h2>Last cleaned: {{ item.day }}</h2>
       <a href="{% url 'items_update' item.id %}">Edit</a>
       <a href="{% url 'items_delete' item.id %}">Delete</a>
@@ -24,37 +24,37 @@
 
 <div class="materials">
   <section>
-    <div>
+    {% comment %} <div>
       <h2>Materials</h2>
-    </div>
+    </div> {% endcomment %}
     <div>
-      <h2>Materials used to clean {{item.task}}</h2>
+      <h2><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 22px> Tools for {{item.task}}:</h2>
       {% if item.materials.count %}
         {% for material in item.materials.all %}
-          <div>
+          <div class="materials-added">
             <a href="{% url 'materials_detail' material.id %}">{{material.name}}</a>
           </div>
         {% endfor %}
       {% else %}
-        <h4>No materials needed for cleaning the {{item.tasl}}</h4>
+        <h4>No materials needed <img src="{% static 'images/stars.svg' %}" alt="yellow sponge" width= 20px></h4>
       {% endif %}
     </div>
     <div>
       <h3>Materials Available</h3>
         {% if materials.count %}
           {% for material in materials.all %}
-            <div>
+            <div class="materials-available">
               <a href="{% url 'materials_detail' material.id %}">
-                <h3>{{material.name}}</h3>
+                <h3 class="material-name">{{material.name}}</h3>
               </a>
               <form action="{% url 'assoc_material' item.id material.id %}" method="POST">
                 {% csrf_token %}
-                <button type="submit">Add</button>
+                <button type="submit" class="materials-button">Add</button>
               </form>
             </div>
           {% endfor %}
         {% else %}
-          <h3>{{item.task}} required all materials.</h3>
+          <h3>All Tools Used <img src="{% static 'images/stars.svg' %}" alt="yellow sponge" width= 30px></h3>
         {% endif %}
     </div>
   </section>

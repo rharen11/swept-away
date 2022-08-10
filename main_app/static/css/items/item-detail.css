@@ -2,9 +2,52 @@
 .items {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.items-list {
+  justify-content: center;
 }
 
 .materials {
   display: flex;
   flex-direction: row;
+}
+a {
+  background-color: #2F4858;
+  color: #F6B173;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.materials-available {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F4858;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.materials-added {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.materials-button {
+  border: none;
+  border-radius: 4px;
+  background-color: #F6B173;
+  color: #2F4858;
+  margin: 5px;
+}
+
+.material-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
