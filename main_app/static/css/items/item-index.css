@@ -60,6 +60,8 @@
 }
 
 .no-items {
+  background-color: #525A7A90;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;

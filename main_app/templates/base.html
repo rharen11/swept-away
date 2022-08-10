@@ -28,7 +28,7 @@
           <li><a href="{% url 'materials_index' %}">Tools</a></li>
           <li><a href="{% url 'items_create' %}">+ Task</a></li>
           <li><a href="{% url 'materials_create' %}">+ Tool</a></li>
-          <li><a href="{% url 'logout' %}">Log Out</a></li>
+          <li><a href="{% url 'logout' %}"><img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 20px></a></li>
         {% else %}
           {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
           <li><a href="{% url 'home' %}">Login</a></li>

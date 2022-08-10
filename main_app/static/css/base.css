@@ -40,7 +40,7 @@ nav li {
 }
 
 nav li:last-child {
-  padding-left: 38px;
+  padding-left: 20px;
 }
 
 nav a {
@@ -60,7 +60,7 @@ nav ul {
 }
 
 .images {
-  margin: 30px;
+  margin: 20px;
 }
 
 .phrase {
