@@ -175,6 +175,35 @@ nav ul {
   font-size: medium;
 }
 
+.item-dlt-no {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #2F4858;
+  color: #F6B173;
+  margin: 5px;
+  width: fit-content;
+  font-size: medium;
+}
+
+.items-dlt-btn{
+  background-color: #2F4858;
+}
+
+.items-keep-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #2F4858;
+  color: #F6B173;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+  width: fit-content;
+  font-size: medium;
+}
+
 .signup-btn {
   display: flex;
   justify-content: center;
@@ -187,6 +216,14 @@ nav ul {
 
 .exit {
   color: whitesmoke;
+}
+
+.delete-title{
+  background-color: #2F485880;
+  color: whitesmoke;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 @media only screen and (min-width: 768px){

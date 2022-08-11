@@ -8,10 +8,12 @@
   <h2>Are you done cleaning {{item.task}}?</h2>
   <form action="" method="POST">
     {% csrf_token %}
-    <a href="{% url 'items_detail' item.id %}">
+    <button class="items-dlt-btn">
+      <a href="{% url 'items_detail' item.id %}" class="item-dlt-no">
       Nope- still dirty
-    </a>
-    <button type="submit">Yup- its SPARKLING</button>
+      </a>
+  </button>
+    <button type="submit" class="items-keep-btn">Yup- its SPARKLING</button>
   </form>
 </div>
 
