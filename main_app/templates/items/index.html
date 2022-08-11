@@ -15,15 +15,15 @@
 <section>
   {% if items.count %}
     {% for item in items %}
-    <a href="{% url 'items_detail' item.id %}" class="card-title">
-      <div class="card">
-          <div class="card-content">
-            <div clas="card-img">
-              <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 60px>
+      <a href="{% url 'items_detail' item.id %}" class="card-title">
+        <div class="card">
+            <div class="card-content">
+              <div clas="card-img">
+                <img src="{% static 'images/lemon.svg' %}" alt="yellow sponge" width= 60px>
+              </div>
+              <h2 class="card-title">{{ item.task }}</h2>
             </div>
-            <h2 class="card-title">{{ item.task }}</h2>
-          </div>
-      </div>
+        </div>
     </a>
     {% endfor %}
   {% else%}

@@ -33,3 +33,4 @@ _______
 * Alerts to clean
 * Tab on each task to show length of time since cleaned
 * Calender to pick dates 
+* Notes area for cleaning tasks
