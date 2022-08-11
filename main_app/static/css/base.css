@@ -21,7 +21,7 @@ nav{
   /* background-image: url(/main_app/static/images/citrus.jpg); */
   color: #F6B173;
   border-radius: 4px;
-  height: 30px;
+  height: 40px;
   margin-top: 5px;
 }
 
@@ -34,9 +34,12 @@ ul{
 
 nav li {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 5px;
+  padding-top: 10px;
   color: #F6B173;
+  font-size: large;
 }
 
 nav li:last-child {
@@ -99,6 +102,7 @@ nav ul {
 .home-img {
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .login {
