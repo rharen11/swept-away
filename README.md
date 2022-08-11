@@ -3,6 +3,10 @@
 ##
 Swept Away is an application to keep you on track with cleaning- so you can enjoy more life!
 
+## 
+![items list](./main_app/static/images/items-ss.png)
+![items screenshot](./main_app/static/images/detail-ss.png)
+
 ## Getting Started
 * [Check out the site!](https://swept-away-rlk.herokuapp.com/)
 * [Github Repo](https://github.com/rharen11/swept-away)

@@ -1,5 +1,8 @@
 .signup-table {
+  background-color: #2F485880;
+  color: whitesmoke;
   font-size: small;
+  border-radius: 4px;
 }
 
 table {
@@ -25,4 +28,18 @@ li {
 
 span {
   font-size: 0;
+}
+
+.signup-title{
+  background-color: #2F485880;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 180px;
+}
+
+.signup-btn{
+  display: flex;
+  margin-left: 275px;
+  margin-top: 5px;
 }
