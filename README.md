@@ -27,6 +27,7 @@ _______
 
 ## Credits
 * SVG Icons available [here](https://www.svgrepo.com/)
+* Vino Li for oranges photography ([Instagram](https://www.instagram.com/vesper.lin/))
 
 ## Ice Box
 * Alerts to clean
