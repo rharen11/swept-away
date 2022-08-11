@@ -7,6 +7,7 @@
   align-items: center;
   margin-top: 5px;
   border-radius: 4px;
+  padding: 5px;
 }
 
 .materials-items {
@@ -36,6 +37,13 @@ h2 {
 
 .materials {
   text-decoration: none;
+}
+
+.no-supplies{
+  background-color: #2F485880;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 

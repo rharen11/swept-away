@@ -16,16 +16,22 @@
 </section>
 
 <section>
-  {% for material in material_list %}
-    <a href="{% url 'materials_detail' material.id %}" class="materials">
-      <div class="materials-items">
-        <div class="card-img">
-          <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 60px>
+  {% if material_list.count %}
+    {% for material in material_list %}
+      <a href="{% url 'materials_detail' material.id %}" class="materials">
+        <div class="materials-items">
+          <div class="card-img">
+            <img src="{% static 'images/sponge.svg' %}" alt="yellow sponge" width= 60px>
+          </div>
+          <h2 class="card-title">{{material.name}} </h2>
         </div>
-        <h2 class="card-title">{{material.name}} </h2>
-      </div>
-    </a>
-  {% endfor %}
+      </a>
+    {% endfor %}
+  {% else %}
+    <div>
+      <h2 class="no-supplies">No Supplies yet<img src="{% static 'images/stars.svg' %}" alt="spray-bottle" width=30px></h2>
+    </div>
+  {% endif %}
 </section>
 
 {% endblock %}
